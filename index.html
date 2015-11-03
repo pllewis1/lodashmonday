@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="octicons/octicons.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles/main.css" media="screen" title="no title" charset="utf-8">
+    <meta charset="utf-8">
+    <title>GITHUMP LODASH</title>
+  </head>
+  <body>
+    <header>
+      <nav class="left_nav">
+        <a id="main_icon" class="octicon octicon-mark-github"></a>
+        <input type="text" name="name" placeholder="Search GitHub" value="">
+        <a id="pull" href="#">Pull requests</a>
+        <a href="#">Issues</a>
+        <a href="#">Gist</a>
+      </nav>
+      <nav class="right_nav">
+        <a  href="#" class="octicon octicon-bell"></a>
+
+        <a href="#" class="octicon octicon-plus"></a>
+        <a class="octicon octicon-triangle-down"></a>
+        <a class="image_container" href="#"></a>
+        <a id="far_right"class= "octicon octicon-triangle-down" href="#"></a>
+
+      </nav>
+    </header>
+<section class="summary">
+<a class="image_container" href="#"> </a>
+
+<!-- <p>
+  <span class="octicon octicon-location"></span> Nashville, TN
+</p>
+<p>
+  <span class="octicon octicon-clock"></span> Joined on Oct 5, 2015
+</p>
+  <article class="">
+
+    <div class="F">
+      <p>
+
+      </p>
+    </div>
+    <div class="S">
+
+      <p>
+
+      </p>
+    </div>
+    <div class="G">
+
+      <p>
+
+      </p>
+    </div>
+
+  </article> -->
+</section>
+<section class="posts">
+  <nav class="broad">
+    <a href="#"><span class="octicon octicon-plus"></span> Contributions</a>
+    <a class="current" href="#"><span class="octicon octicon-repo"></span> Repositories</a>
+    <a href="#"><span class="octicon octicon-rss"></span> Public activity</a>
+    <button type="button" name="button"><span class="octicon octicon-pencil"></span> Edit profile</button>
+
+  </nav>
+  <nav class="repository">
+    <input type="text" name="name" placeholder="Find a repository..." value="">
+    <button type="button" name="searchbtn">Search</button>
+    <a class="all" href="#">All</a>
+    <a href="#">Public</a>
+    <a href="#">Private</a>
+    <a href="#">Sources</a>
+    <a href="#">Forks</a>
+    <a href="#">Mirrors</a>
+    <button class="new" type="button" name="button"><span class="octicon octicon-repo">New</button>
+  </nav>
+  <article class="repo">
+
+  </article>
+</section>
+<script type="text/template" id="repoItem">
+
+    <div class="repoman"> </div>
+
+      <h4> <%= name %>   <span class="octicon octicon-git-branch">'+ <%= forks %></span> </h4>
+      <time> Updated  <%= updated_at %> </time>
+
+    </div>
+</script>
+
+<script type="text/template" id="profileItem">
+  <p>
+    <span class="octicon octicon-location"></span> <%= location %>
+  </p>
+  <p>
+    <span class="octicon octicon-clock"></span> Joined on Oct 5, 2015
+  </p>
+    <article class="">
+
+      <div class="F">
+        <h3> <%= followers %> <br> <span class="blue"> followers </span></h3>
+      </div>
+      <div class="S">
+        <h3>  <%= followers %> <br> <span class="blue"> starred </span></h3>
+      </div>
+      <div class="G">
+        <h3> <%= following %> <br> <span class="blue"> following </span></h3>
+
+      </div>
+
+    </article>
+
+    </div>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="app.js"></script>
+  </body>
+</html>
